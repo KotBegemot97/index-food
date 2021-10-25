@@ -89,3 +89,370 @@ body {
     color: #000;
     border-radius: 50%;
 }
+
+/* Menu */
+
+.slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    min-height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.slide:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+}
+
+.slide-text-light {
+    background-color: gray;
+    color: #fff;
+}
+
+.slide-summer {
+    background-image: url('../img/summer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-content {
+    position: relative;
+    max-width: 400px;
+}
+
+.slide-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 51px;
+}
+
+.slide-text {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.button-primary {
+    background-color: #F47322;
+    color: #fff;
+}
+
+.button-default {
+    background-color: #fff;
+    color: #5F5F61;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+/* Promo */
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+    margin: -20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 32px;
+    border-radius: 20px;
+    max-width: 570px;
+    min-height: 380px;
+    overflow: hidden;
+}
+.card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.card-text-light {
+    color: #fff;
+}
+
+.card-image {
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    margin-top: 4px;
+    margin-bottom: 21px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+}
+
+.card-description {
+    max-width: 168px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.card-price {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+}
+
+.card-delivery {
+    display: block;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+/* Delivery-week */
+
+.delivery-week {
+    padding: 100px 0;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 47px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+}
+
+.delivery-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.delivery-card {
+    position: relative;
+    margin: 15px;
+    width: 275px;
+    height: 182px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.delivery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delivery-tag {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 30px;
+}
+
+.tag-health {
+    background-color: #D0FD89;
+    color: #49494F;
+}
+.tag-vegetable {
+    background-color: #AEBC41;
+    color: #fff;
+}
+.tag-meat {
+    background-color: #B86B78;
+    color: #fff;
+}
+.tag-bird {
+    background-color: #D68334;
+    color: #fff;
+}
+.tag-fish {
+    background-color: #CD6255;
+    color: #fff;
+}
+.tag-all {
+    background-color: #FFFDBF;
+    color: #49494F;
+}
+
+/* Section-gray */
+
+.section-gray {
+    background-color:#F6F6F6;
+}
+
+.category {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.tabs {
+    display: flex;
+    margin: 0;
+    margin-bottom: 62px;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs-link {
+    margin-right: 58px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494F;
+    text-decoration: none;
+}
+
+.tabs-link.active {
+    color: #F37321;
+}
+
+.tabs-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-card {
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.tabs-image {
+    max-width: 100%;
+}
+
+.tabs-card-content {
+    padding: 23px;
+}
+
+.tabs-title {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.tabs-description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;  
+    color: #B9B9BE;
+}
+
+.tabs-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs-price {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    color: #4B4B51;
+}
+
+.tabs-weight {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #AAAAB1;
+}
+
+.button-outline {
+    padding: 15px 25px;
+    border: 2px solid #F37321;
+    box-sizing: border-box;
+    border-radius: 33px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F37321;
+    cursor: pointer;
+}
+
+.button-center {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    width: 315px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 40px 0;
+    background-color: #F6F6F6;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 50px;
+}
+
+.footer-link {
+    margin-right: 50px;
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration: underline;
+    color: #000;
+}
+
+.socials-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.social-link {
+    margin-left: 20px;
+    text-decoration: none;
+}
